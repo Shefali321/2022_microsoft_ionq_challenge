@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.8/socket.io.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<style>
+
+  </style>
+</head>
+<body>
+  <h2>{{ game_status }}</h2>
+  {{p[]}}
+<center>
+  <img src={{ p[0] }} class="center" size width="55px" height="50px"><br>
+   <img src={{ p[1] }} class="center" size width="55px" height="50px"> <img src={{ p[2] }} class="center" size width="55px" height="50px"> <br>
+  <img src={{ p[3] }} class="center" size width="55px" height="50px"><img src={{ p[4] }} class="center" size width="55px" height="50px"><img src={{ p[5] }} class="center" size width="55px" height="50px"><br>
+  <img src={{ p[6] }} class="center" size width="55px" height="50px"><img src={{ p[7] }} class="center" size width="55px" height="50px"><img src={{ p[8] }} class="center" size width="55px" height="50px"><img src={{ p[9] }} class="center" size width="55px" height="50px"><br>
+  <img src={{ p[10] }} class="center" size width="55px" height="50px"><img src={{ p[11] }} class="center" size width="55px" height="50px"><img src={{ p[12] }} class="center" size width="55px" height="50px"><img src={{ p[13] }} class="center" size width="55px" height="50px"><img src={{ p[14] }} class="center" size width="55px" height="50px"><br>
+  <img src={{ p[15] }} class="center" size width="55px" height="50px"><img src={{ p[16] }} class="center" size width="55px" height="50px"><img src={{ p[17] }} class="center" size width="55px" height="50px"><img src={{ p[18] }} class="center" size width="55px" height="50px"><br>
+ <img src={{ p[19] }} class="center" size width="55px" height="50px"><img src={{ p[20] }} class="center" size width="55px" height="50px"><img src={{ p[21] }} class="center" size width="55px" height="50px"><br>
+  <img src={{ p[22] }} class="center" size width="55px" height="50px"><img src={{ p[23] }} class="center" size width="55px" height="50px"><br><img src={{ p[24] }} class="center" size width="55px" height="50px"><br>
+ 
+  </div>
+  <form method='POST' action='/player1'>
+<label>Enter the position of the piece you want to move:</label><input name='si'><br>
+
+<label>Enter the position where you want to move the piece. </label><input name='fi'><br>
+<label>Enter your quantum move </label><input name='qm'><br>
+Submit <input type='submit'>
+  </form>
+  </center>
+</body>
+</html>
